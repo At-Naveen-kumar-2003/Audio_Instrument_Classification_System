@@ -1,5 +1,5 @@
 % Wavelet Analysis Functions
-% Run Wavelet Analysis on selected audio
+
 function runWavelet(fig, ~, ~)
     try
         appData = guidata(fig);
@@ -247,4 +247,5 @@ function handleError(fig, ME, context)
     appData = guidata(fig);
     appData.isProcessing = false;
     guidata(fig, appData);
+
 end
