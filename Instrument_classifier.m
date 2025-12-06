@@ -1,5 +1,4 @@
 % Instrument Identification Functions
-% Identify instruments in selected audio
 function identifyInstrument(fig, audioNum)
     try
         appData = guidata(fig);
@@ -450,4 +449,5 @@ function handleError(fig, ME, context)
     appData = guidata(fig);
     appData.isProcessing = false;
     guidata(fig, appData);
+
 end
